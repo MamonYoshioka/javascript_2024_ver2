@@ -1,0 +1,18 @@
+@mixin title {
+    margin: 0;
+    padding: 0;
+    background-color: bisque; 
+    text-align: center;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    @include title;
+}
+footer{
+    @include title;
+}
