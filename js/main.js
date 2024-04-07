@@ -57,3 +57,30 @@ console.log(coffee.name);
 console.log(coffee.size);
 coffee.barista = 'Hanako';
 console.log(coffee.barista);
+
+// typeof演算子
+console.log(typeof 3);
+console.log(typeof NaN);
+console.log(typeof [1,2,3]);
+
+// 関数
+// function add(){
+//     console.log(1 + 1);
+// }
+// add();
+/*
+関数の中身のnum1やnum2はパラメータという
+*/
+function add(num1,  num2){
+    console.log(num1 + num2);
+}
+add(2, 3);
+add(6, 3);
+add(5, 5);
+
+// return文
+function sub(num3, num4){
+    return num3 - num4;
+}
+let returnValue = sub(10, 3);
+console.log(returnValue);
