@@ -86,3 +86,9 @@ const hello = 'Hello2';
     const hello = 'Hello1';
     console.log(hello);
 }
+
+// 三項演算子
+let is_true = true;
+is_true = is_true ? 'True' : 'False';
+
+console.log(is_true);
