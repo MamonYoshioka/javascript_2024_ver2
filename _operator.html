@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演算子</title>
+    <script src="js/operator.js"></script>
+    <style>
+        /* テーブル要素 */
+        .table {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        /* 行要素 */
+        .table-row {
+            display: table-row;
+        }
+    
+        /* ヘッダーセル要素 */
+        .table-header-cell {
+            display: table-cell;
+            padding: 8px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+
+        .table-row-header {
+            background-color: aquamarine;
+        }
+    
+        /* セル要素 */
+        .table-cell {
+            display: table-cell;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .left {
+            color: red;
+        }
+        .right {
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>演算子の確認</h1>
+        <div>
+            ・演算子の確認は検証ツールで確認してください
+        </div>
+        <h2>等価演算子</h2>
+        <h3>プリミティブ型での演算子</h3>
+        <div class="table">
+            <!-- ヘッダー行 -->
+            <div class="table-row table-row-header">
+                <div class="table-header-cell">演算子</div>
+                <div class="table-header-cell">用途</div>
+                <div class="table-header-cell">例</div>
+                <div class="table-header-cell">結果</div>
+            </div>
+            
+            <!-- データ行 1 -->
+            <div class="table-row">
+                <div class="table-cell">==</div>
+                <div class="table-cell">値が等しいことを確認</div>
+                <div class="table-cell">1 == "1"</div>
+                <div class="table-cell">true</div>
+            </div>
+        
+            <!-- データ行 2 -->
+            <div class="table-row">
+                <div class="table-cell">===</div>
+                <div class="table-cell">値と型が等しいことを確認</div>
+                <div class="table-cell">1 === "1"</div>
+                <div class="table-cell">false</div>
+            </div>
+        
+            <!-- データ行 3 -->
+            <div class="table-row">
+                <div class="table-cell">!=</div>
+                <div class="table-cell">値が等しくないことの確認</div>
+                <div class="table-cell">1 != 2</div>
+                <div class="table-cell">true</div>
+            </div>
+        
+            <!-- データ行 4 -->
+            <div class="table-row">
+                <div class="table-cell">!==</div>
+                <div class="table-cell">値と型が等しくないことの確認</div>
+                <div class="table-cell">1 !== "1"</div>
+                <div class="table-cell">true</div>
+            </div>
+        
+        </div>
+        <h3>オブジェクト演算子</h3>
+        ・演算子の確認は検証ツールで確認してください
+
+        <h3>論理演算子</h3>
+        <div class="table">
+            <!-- ヘッダー行 -->
+            <div class="table-row table-row-header">
+                <div class="table-header-cell">演算子</div>
+                <div class="table-header-cell">用途</div>
+                <div class="table-header-cell">例</div>
+                <div class="table-header-cell">結果</div>
+            </div>
+            
+            <!-- 論理積 -->
+            <div class="table-row">
+                <div class="table-cell">&&</div>
+                <div class="table-cell">論理積（AND）</div>
+                <div class="table-cell">true && true</div>
+                <div class="table-cell">true</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">&&</div>
+                <div class="table-cell">論理積（AND）</div>
+                <div class="table-cell">true && false</div>
+                <div class="table-cell">false</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">&&</div>
+                <div class="table-cell">論理積（AND）</div>
+                <div class="table-cell">false && true</div>
+                <div class="table-cell">false</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">&&</div>
+                <div class="table-cell">論理積（AND）</div>
+                <div class="table-cell">false && false</div>
+                <div class="table-cell">false</div>
+            </div>
+        
+            <!-- 論理和 -->
+            <div class="table-row">
+                <div class="table-cell">||</div>
+                <div class="table-cell">論理和（OR）</div>
+                <div class="table-cell">true || true</div>
+                <div class="table-cell">true</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">||</div>
+                <div class="table-cell">論理和（OR）</div>
+                <div class="table-cell">true || false</div>
+                <div class="table-cell">true</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">||</div>
+                <div class="table-cell">論理和（OR）</div>
+                <div class="table-cell">false || true</div>
+                <div class="table-cell">true</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">||</div>
+                <div class="table-cell">論理和（OR）</div>
+                <div class="table-cell">false || false</div>
+                <div class="table-cell">false</div>
+            </div>
+        </div>
+        <br>
+        <div class="logi-ope">
+            <strong>【論理積】</strong><br>
+            &nbsp;&nbsp;・<span class="left">左側</span>がtruthyの場合は<span class="right">右側</span>の値を返す<br>
+            &nbsp;&nbsp;・<span class="left">左側</span>がfalsyの場合は<span class="left">左側</span>の値を返す<br>
+            <br>
+            <strong>【論理和】</strong><br>
+            &nbsp;&nbsp;・<span class="left">左側</span>がtruthyの場合は<span class="left">左側</span>の値を返す<br>
+            &nbsp;&nbsp;・<span class="left">左側</span>がfalsyの場合は<span class="right">右側</span>の値を返す<br>
+        </div>
+    </main>
+</body>
+</html>
