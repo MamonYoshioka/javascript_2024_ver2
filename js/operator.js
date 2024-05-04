@@ -43,3 +43,8 @@ let b = a++;
 a : 1
 b : 0
 */
+
+
+const obj_1 = { };
+const obj_2 = { };
+console.log(obj_1 === obj_2);
