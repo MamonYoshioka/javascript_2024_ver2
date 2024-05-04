@@ -48,3 +48,18 @@ b : 0
 const obj_1 = { };
 const obj_2 = { };
 console.log(obj_1 === obj_2);
+
+// 三項演算子
+(1 === 1) ? console.log('真') : console.log('偽');
+(1 === 2) ? console.log('真') : console.log('偽');
+
+// Null合体演算子
+let val = null;
+
+val = val ?? "初期値";
+console.log(`val: ${val}`);
+
+let number3 = 0;
+
+is_number = number3 ?? "数値が入っていません"
+console.log(`数値: ${is_number}`);
