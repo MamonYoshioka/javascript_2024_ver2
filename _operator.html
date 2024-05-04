@@ -113,52 +113,52 @@
             <div class="table-row">
                 <div class="table-cell">&&</div>
                 <div class="table-cell">論理積（AND）</div>
-                <div class="table-cell">true && true</div>
-                <div class="table-cell">true</div>
+                <div class="table-cell">true && <span class="right">true</span></div>
+                <div class="table-cell"><span class="right">true</span></div>
             </div>
             <div class="table-row">
                 <div class="table-cell">&&</div>
                 <div class="table-cell">論理積（AND）</div>
-                <div class="table-cell">true && false</div>
-                <div class="table-cell">false</div>
+                <div class="table-cell">true && <span class="right">false</span></div>
+                <div class="table-cell"><span class="right">false</span></div>
             </div>
             <div class="table-row">
                 <div class="table-cell">&&</div>
                 <div class="table-cell">論理積（AND）</div>
-                <div class="table-cell">false && true</div>
-                <div class="table-cell">false</div>
+                <div class="table-cell"><span class="left">false</span> && true</div>
+                <div class="table-cell"><span class="left">false</span></div>
             </div>
             <div class="table-row">
                 <div class="table-cell">&&</div>
                 <div class="table-cell">論理積（AND）</div>
-                <div class="table-cell">false && false</div>
-                <div class="table-cell">false</div>
+                <div class="table-cell"><span class="left">false</span> && false</div>
+                <div class="table-cell"><span class="left">false</span></div>
             </div>
         
             <!-- 論理和 -->
             <div class="table-row">
                 <div class="table-cell">||</div>
                 <div class="table-cell">論理和（OR）</div>
-                <div class="table-cell">true || true</div>
-                <div class="table-cell">true</div>
+                <div class="table-cell"><span class="left">true</span> || true</div>
+                <div class="table-cell"><span class="left">true</span></div>
             </div>
             <div class="table-row">
                 <div class="table-cell">||</div>
                 <div class="table-cell">論理和（OR）</div>
-                <div class="table-cell">true || false</div>
-                <div class="table-cell">true</div>
+                <div class="table-cell"><span class="left">true</span> || false</div>
+                <div class="table-cell"><span class="left">true</span></div>
             </div>
             <div class="table-row">
                 <div class="table-cell">||</div>
                 <div class="table-cell">論理和（OR）</div>
-                <div class="table-cell">false || true</div>
-                <div class="table-cell">true</div>
+                <div class="table-cell">false || <span class="right">true</span></div>
+                <div class="table-cell"><span class="right">true</span></div>
             </div>
             <div class="table-row">
                 <div class="table-cell">||</div>
                 <div class="table-cell">論理和（OR）</div>
-                <div class="table-cell">false || false</div>
-                <div class="table-cell">false</div>
+                <div class="table-cell">false || <span class="right">false</span></div>
+                <div class="table-cell"><span class="right">false</span></div>
             </div>
         </div>
         <br>
@@ -170,6 +170,13 @@
             <strong>【論理和】</strong><br>
             &nbsp;&nbsp;・<span class="left">左側</span>がtruthyの場合は<span class="left">左側</span>の値を返す<br>
             &nbsp;&nbsp;・<span class="left">左側</span>がfalsyの場合は<span class="right">右側</span>の値を返す<br>
+        </div>
+        <br>
+        <div>
+            <strong>Null合体演算子</strong><br>
+            ・<strong style="color: #91234d; text-decoration: underline dotted;">変数に初期値を設定するときに使用される演算子</strong><br> 
+            ・左のオペランドが<span style="color: green;">【null】</span>または<span style="color: green;">【undefined】</span>の場合は、右のオペランドを返す
+
         </div>
     </main>
 </body>
