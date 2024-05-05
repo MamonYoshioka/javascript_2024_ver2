@@ -1,0 +1,38 @@
+@charset "UTF-8";
+header, footer {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  text-align: center;
+}
+header nav a, footer nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+@media (max-width: 375px) {
+  header nav, footer nav {
+    display: none;
+  }
+  header nav .hamburger-menu, footer nav .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  header nav h1, footer nav h1 {
+    font-size: 18px;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.hamburger-menu {
+  display: none;
+}
+.hamburger-menu:before {
+  content: "☰";
+  font-size: 24px;
+}/*# sourceMappingURL=test_form.css.map */

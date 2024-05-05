@@ -1,0 +1,43 @@
+header, footer {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    text-align: center;
+
+    nav {
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        // ビューポートが375px以下の場合のスタイル
+        @media (max-width: 375px) {
+            display: none; // 通常のナビゲーションリンクを非表示にする
+
+            .hamburger-menu {
+                display: block; // ハンバーガーメニューアイコンを表示
+                cursor: pointer;
+            }
+
+            h1 {
+                font-size: 18px; // 小さなデバイス用のフォントサイズ
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+// ハンバーガーメニューの基本スタイル
+.hamburger-menu {
+    display: none; // デフォルトでは非表示
+    &:before {
+        content: "\2630"; // ハンバーガーアイコン（三本線）
+        font-size: 24px;
+    }
+}
