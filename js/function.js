@@ -30,17 +30,16 @@ console.log(add.length);
 関数式は関数宣言文と異なり、変数を作り出すことはできない。
 オブジェクトのみを作っている。
 */
-let sayHi = function(){
-    console.log('こんにちは');
+let sayHi = function(name){
+    return 'Hi!!' + name;
 }
 
-sayHi();
+console.log(sayHi('Jhon'));
 
 /*
 まとめ
 関数宣言文は、関数全体が巻き上げられるため、定義前に呼び出すことが可能です。
 関数式は、変数の巻き上げのみが行われるため、実際に関数が割り当てられる行が実行されるまで関数としては機能しません。
 どちらの方法もJavaScriptで広く使われていますが、使用するシナリオによって選択が異なります。
-
 */
 
