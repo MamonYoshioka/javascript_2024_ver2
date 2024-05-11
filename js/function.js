@@ -200,6 +200,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(goodAfternoon, 5000, 'Tom');
 
+    // 練習問題6.9
+    function plus(a, b) {return '計算結果は' + (a + b);}
+    // function minus2(a, b) {return a - b;}
+
+    function calc(val1, val2, callBack){
+        return callBack(val1, val2);
+    }
+
+    const add_result = calc(1, 2, plus);
+    console.log(add_result); 
+
 
    
 });
