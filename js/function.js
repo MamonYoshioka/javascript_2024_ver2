@@ -246,14 +246,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(goodAfternoon, 5000, 'Tom');
 
     // 練習問題6.9
-    function plus(a, b) {return '計算結果は' + (a + b);}
+    function plus_practice(a, b) {return 'コールバック関数、計算結果は' + (a + b);}
     // function minus2(a, b) {return a - b;}
 
     function calc(val1, val2, callBack){
         return callBack(val1, val2);
     }
 
-    const add_result = calc(1, 2, plus);
+    const add_result = calc(1, 2, plus_practice);
     console.log(add_result); 
 
 
